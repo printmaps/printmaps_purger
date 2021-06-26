@@ -6,7 +6,8 @@ Description:
 - Remove outdated map directories.
 
 Releases:
-- 0.1.0 - 2017/05/27 : beta 1
+- v0.1.0 - 2017/05/27 : beta 1
+- v0.2.0 - 2021/06/12 : switch to modules, third-party libs updated, go 1.16.5
 
 Author:
 - Klaus Tockloth
@@ -35,6 +36,7 @@ Contact (eMail):
 
 Remarks:
 - Cross compilation for Linux: env GOOS=linux GOARCH=amd64 go build -v
+- Lint: golangci-lint run
 
 Links:
 - http://www.printmaps-osm.de
@@ -59,8 +61,8 @@ import (
 // general program info
 var (
 	progName    = os.Args[0]
-	progVersion = "0.1.0"
-	progDate    = "2017/05/27"
+	progVersion = "0.2.0"
+	progDate    = "2021/06/12"
 	progPurpose = "Printmaps Purger"
 	progInfo    = "Remove outdated map directories."
 )
